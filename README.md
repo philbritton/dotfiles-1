@@ -1,27 +1,6 @@
 dotfiles
 ========
-This project is simply an attempt to organize, version-control and share my own dotfiles across systems I use as well as with other people.
-Heavy inspiration was taken from [holman's dotfiles](https://github.com/holman/dotfiles) on Github, but the main script is written from scratch.
-
-The idea is that you'll fragment and sort your dotfiles in subdirectories of `~/.dotfiles`, and then run `dotfiles.rb` to transfer the contents of these files into your home directory.
-Two modes of operation are implemented; symlinking and merging.
-The default `Rules` file (explained later) showcases pretty much all the features of the rules DSL.
-Additional rules can be added to the `Rules` file to customize the operation of `dotfiles.rb`.
-
-Since I use this repository to store my own dotfiles as well, I have organized things into subdirectories. The default `Rules` file runs most of its rules on two of these subdirectories; the `common` directory and one directory corresponding to the current machine.
-
-install
-=======
-Installing is fairly simple, if you only want the script and none of the version-controlling goodies:
-
-1. `git clone https://github.com/urdh/dotfiles.git ~/.dotfiles`
-
-After moving your dotfiles to subfolders in `~/.dotfiles`, renaming them and customizing the Rules file, simply do this:
-
-1. `cd ~/.dotfiles`
-2. `./dotfiles.rb -v`
-
-The script will symlink and merge your files as instructed.
+Fork of urdh/dotfiles.  After looking for an easy way to symlink all my organized dotfiles, I found this project.
 
 advanced install
 ----------------
